@@ -48,6 +48,13 @@ PRODUCT_PACKAGES += \
 endif
 endif
 
+# Aperture
+PRODUCT_PACKAGES += \
+    Aperture
+
+PRODUCT_PRODUCT_PROPERTIES += \
+    persist.vendor.camera.privapp.list=org.lineageos.aperture.dev
+
 # APNs
 ifneq ($(TARGET_NO_TELEPHONY), true)
 PRODUCT_COPY_FILES += \
@@ -75,10 +82,6 @@ PRODUCT_SYSTEM_PROPERTIES += \
 
 # Boot Animation
 $(call inherit-product, vendor/aospa/bootanimation/bootanimation.mk)
-
-# Camera
-PRODUCT_PACKAGES += \
-    GoogleCameraGo
 
 # Charger
 ifeq ($(TARGET_DISABLES_GMS), true)
