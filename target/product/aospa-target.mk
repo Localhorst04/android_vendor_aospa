@@ -26,6 +26,7 @@ PRODUCT_PACKAGES += \
     AvatarPicker \
     Etar \
     ExactCalculator \
+    Glimpse \
     Jelly \
     LatinIME
 
