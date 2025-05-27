@@ -5,6 +5,7 @@
 -->
 <manifest>
   <include name="../platforms/kona.xml" />
+  <include name="./vanilla.xml" />
 
   <project path="device/xiaomi/alioth" name="android_device_xiaomi_alioth" remote="pnm" revision="vauxite" />
   <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="pnm" revision="vauxite" />
