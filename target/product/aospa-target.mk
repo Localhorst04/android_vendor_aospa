@@ -200,8 +200,10 @@ SYSTEMUI_OPTIMIZE_JAVA := true
 FULL_SYSTEM_OPTIMIZE_JAVA := true
 
 # Material Files
+ifneq ($(TARGET_DISABLES_GMS), true)
 PRODUCT_PACKAGES += \
     MaterialFiles
+endif
 
 # MTE
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
